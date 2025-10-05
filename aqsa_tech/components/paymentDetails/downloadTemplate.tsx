@@ -1,5 +1,5 @@
 import React from "react";
-import { dateMonthString } from "src/utility/dateToMonth";
+import { dateMonthString } from "../../utility/dateToMonth";
 type PaymentDTO={
     _id?:string,
     pay_month:string,

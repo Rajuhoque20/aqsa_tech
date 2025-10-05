@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, { FormEvent, useCallback, useEffect, useState } from "react";
-import { Button, DeleteButton, EditButton } from "src/components/Button";
+import { Button, DeleteButton, EditButton } from "../Button";
 import Notification from "../Notification/Notifcation";
 import Loader from "../Loader/Loader";
 import { usePDF } from "react-to-pdf";
 import { HiddenInvoice } from "./downloadTemplate";
 import CheckBox from "../Checkbox/Checkbox";
-import { dateMonthString } from "src/utility/dateToMonth";
-const AddPayment =React.lazy(()=>import("src/components/AddPayment/addPayment")); 
-const DeletePayment =React.lazy(()=>import("src/components/DeletePayment/deletePayment"));
+import { dateMonthString } from "../../utility/dateToMonth";
+const AddPayment =React.lazy(()=>import("../AddPayment/addPayment")); 
+const DeletePayment =React.lazy(()=>import("../DeletePayment/deletePayment"));
 const columns=["Payment for","Monthly Fees",'Pay Date', "Paid Amount", "Due", "Action",];
 type PaymentDTO={
     _id?:string,

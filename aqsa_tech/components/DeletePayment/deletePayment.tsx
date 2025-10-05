@@ -1,6 +1,6 @@
 
 import React, { Dispatch, SetStateAction } from "react";
-const Modal=React.lazy(()=>import("src/components/modal/Modal"));
+const Modal=React.lazy(()=>import("../modal/Modal"));
 type DeleteDTO={
         name:string,
         id:string|undefined,

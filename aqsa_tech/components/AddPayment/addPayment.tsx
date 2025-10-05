@@ -1,7 +1,8 @@
 
 import React, { FormEvent } from "react";
-import { Button } from "src/components/Button";
-const Modal=React.lazy(()=>import("src/components/modal/Modal"));
+import { Button } from "../Button";
+// import { Button } from "src/components/Button";
+const Modal=React.lazy(()=>import("../modal/Modal"));
 
 type PaymentDTO={
     _id?:string,

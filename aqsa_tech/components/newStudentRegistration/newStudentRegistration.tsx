@@ -1,11 +1,11 @@
 
 'use client'
 import React, { FormEvent, useState } from 'react'
-const Modal=React.lazy(()=>import("src/components/modal/Modal"));
+const Modal=React.lazy(()=>import("../modal/Modal"));
 import { Button } from '../Button';
 import axios from 'axios';
 import Notification from '../Notification/Notifcation';
-import { ErrorMessage } from 'src/utility/errorMessage';
+import { ErrorMessage } from '../../utility/errorMessage';
 
 type Props={
     open:boolean,
