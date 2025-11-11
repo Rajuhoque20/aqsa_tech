@@ -19,9 +19,38 @@ const robotoCondensed = Roboto_Condensed({
 //   subsets: ["latin"],
 // });
 
+
+
+
 export const metadata: Metadata = {
-  title: "Aqsa Tech",
+   title: "Aqsa Tech",
   description: "Aqsa Tech provides dynamic and interactive websites for Education, Health Care, Finanace, Food Order and so on.",
+
+  keywords: ["Aqsa Tech", "Al Karim Mission","Al Karim Mission Cooch behar","Delhi Public School"],
+  icons: {
+    icon: '/favicon.ico',
+  },
+  openGraph: {
+    title: "Aqsa Tech | Website Provider",
+    description: "Official website of Aqsa Tech",
+    url: "https://aqsatech.in/",
+    siteName: "Raju Hoque Portfolio",
+    images: [
+      {
+        url: "https://aqsatech.in/profile_image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Raju Hoque Portfolio Preview",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aqsa Tech",
+    description: "Official website of Aqsa Tech.",
+    images: ["https://aqsatech.in/profile_image.jpg"],
+  },
 };
 
 export default function RootLayout({
