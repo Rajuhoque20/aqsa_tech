@@ -33,14 +33,15 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${school.name} - ${school.city}`,
-    description: `Learn more about ${school.name} located in ${school.city}. It has ${school.students} students.`,
-    openGraph: {
-      title: school.name,
-      description: `${school.students} students in ${school.city}`,
-      url: `https://yourdomain.com/schools/${slug}`,
-      type: "website",
-    },
+   title: `${school.name} - ${school.city}`,
+  description: `Get complete information about ${school.name} located in ${school.city}. Total students: ${school.students}.`,
+  keywords: [`${school.name}`, "school", `${school.city}`, "education"],
+  openGraph: {
+    title: school.name,
+    description: `${school.students} students in ${school.city}`,
+    url: `https://aqsatech.in/schools/${slug}`,
+    type: "article",
+  },
   };
 }
 
