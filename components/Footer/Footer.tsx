@@ -67,7 +67,7 @@ export default function Footer() {
               <h2 className='text-yellow-600 text-xl'>{item.title}</h2>
               {item?.data?.map((item2)=>{
                 return(
-                  <span key={item2.id}>{item2.title}</span>
+                  <span className='text-white' key={item2.id}>{item2.title}</span>
                 )
               })}
               

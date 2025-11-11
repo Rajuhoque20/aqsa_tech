@@ -4,7 +4,7 @@ export default  function TechHome(){
     const id='about'
 
     return(
-        <div className=" w-full md:h-screen h-max" style={{background:'#111'}}>
+        <div className=" w-full md:h-screen h-max text-white" style={{background:'#111'}}>
             <div className="wrapper w-full h-full flex items-center justify-center">
                 <span></span>
                 <span></span>
