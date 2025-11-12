@@ -2,6 +2,9 @@ import { slugify } from "@/utility/slugify";
 import { School } from "@/types";
 import { Metadata } from "next";
 import AllPages from "./allPages";
+import Header from "@/components/Header/Header";
+import Footer from "../Footer/Footer";
+
 
 
 const schools: School[] = [
@@ -57,6 +60,8 @@ export default async function SchoolPage({ params }: SchoolPageProps) {
   }
 
   return (
-    <AllPages school={school}/>
+    <div className="flex flex-col h-max overflow-y-auto overflow-x-hidden w-full min-h-screen">
+       <AllPages school={school}/>
+    </div>
   );
 }

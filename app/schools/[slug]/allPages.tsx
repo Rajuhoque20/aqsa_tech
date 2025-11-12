@@ -5,21 +5,26 @@ import { BannerHome } from "@/components/Home/Home";
 // import { NewsFeed } from "@/components/NewsFeed/NewsFeed";
 // import { OurTopper } from "@/components/OurTopper/OurTopper";
 // import { Gallery } from "@/components/Gallery/Gallery";
-// import { AboutUs } from "@/components/AboutUs/AboutUs";
-// import { Overview } from "@/components/Overview/Overview";
-// import { Contact } from "lucide-react";
+
 import { OrgContextProvider } from "@/context/orgContext";
+import { AboutUs } from '../AboutUs/AboutUs';
+import { Overview } from '../Overview/Overview';
+import { Contact } from '../Contact/Contact';
+import Header from '@/components/Header/Header';
+import Footer from '../Footer/Footer';
 
 const AllPages = ({school}:{school:School}) => {
   return (
     <OrgContextProvider data={{...school, logo:'/aqsa_logo.jpg', suit:'An Institue of Eminance',location:school?.location||""}}>
+      <Header/>
       <BannerHome/>
     {/* <NewsFeed/>
     <OurTopper/>
-    <Gallery/>
+    <Gallery/> */}
     <AboutUs/>
     <Overview/>
-    <Contact/> */}
+    <Contact/>
+    <Footer/>
     </OrgContextProvider>
   )
 }

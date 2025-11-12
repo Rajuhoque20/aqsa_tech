@@ -5,6 +5,8 @@ type OrgContextType={
     location:string,
     logo:string,
     suit:string,
+    phone?:string,
+    websiteURL?:string
 }
 const OrgContext=createContext<null|OrgContextType>(null);
 
