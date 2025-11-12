@@ -1,12 +1,12 @@
 import { slugify } from "@/utility/slugify";
 import { School } from "@/types";
 import { Metadata } from "next";
+import AllPages from "./allPages";
+
 
 const schools: School[] = [
-  { name: "Greenwood High", city: "Bangalore", students: 1200 },
-  { name: "Delhi Public School", city: "Delhi", students: 1800 },
-  { name: "St. Xavier's", city: "Mumbai", students: 1500 },
-  { name: "Al Karim Mission", city: "Cooch Behar", students: 25 },
+  { name: "Al Ansar Mission", city: "Cooch Behar", students: 1500, location:'Bosherhat, Cooch Behar, 736101' },
+  { name: "Al Karim Mission", city: "Cooch Behar", students: 25, location:'Harinchawra, Cooch Behar, 736101' },
 ];
 
 interface SchoolPageProps {
@@ -33,8 +33,8 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${school.name} | School in ${school.city} | Aqsa Tech`,
-    description: `${school.name} is one of the top schools in ${school.city}, known for its commitment to quality education, discipline, and student growth. Learn more at Aqsa Tech.`,
+    title: `${school.name} | School in ${school.city}`,
+    description: `${school.name} is one of the top schools in ${school.city}, known for its commitment to quality education, discipline, and student growth. Learn more.`,
     keywords: [school.name, "school", school.city, "education"],
     openGraph: {
       title: `${school.name} | School in ${school.city}`,
@@ -57,10 +57,6 @@ export default async function SchoolPage({ params }: SchoolPageProps) {
   }
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold">{school.name}</h1>
-      <p className="mt-2">📍 City: {school.city}</p>
-      <p>👨‍🎓 Students: {school.students}</p>
-    </div>
+    <AllPages school={school}/>
   );
 }

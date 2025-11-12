@@ -2,13 +2,8 @@ import { slugify } from "@/utility/slugify";
 import { School } from "@/types";
 
 const schools: School[] = [
-  { name: "Greenwood High", city: "Bangalore", students: 1200 },
-  { name: "Delhi Public School", city: "Delhi", students: 1800 },
-  { name: "St. Xavier's", city: "Mumbai", students: 1500 },
-  {
-    name:"Al Karim Mission",city:"Cooch Behar",students:25
-  },
-  
+  { name: "Al Ansar Mission", city: "Cooch Behar", students: 1500 },
+  { name: "Al Karim Mission", city: "Cooch Behar", students: 25 },
 ];
 
 export default function sitemap() {

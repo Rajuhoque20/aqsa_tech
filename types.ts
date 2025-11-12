@@ -3,4 +3,5 @@ export interface School {
   name: string;
   city: string;
   students: number;
+  location?:string,
 }
