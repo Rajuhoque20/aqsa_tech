@@ -1,16 +1,10 @@
 import { slugify } from "@/utility/slugify";
-import { School } from "@/types";
 import { Metadata } from "next";
 import AllPages from "./allPages";
-import Header from "@/components/Header/Header";
-import Footer from "../Footer/Footer";
+import { schools } from "@/constant";
 
 
 
-const schools: School[] = [
-  { name: "Al Ansar Mission", city: "Cooch Behar", students: 1500, location:'Bosherhat, Cooch Behar, 736101' },
-  { name: "Al Karim Mission", city: "Cooch Behar", students: 25, location:'Harinchawra, Cooch Behar, 736101' },
-];
 
 interface SchoolPageProps {
   params: Promise<{ slug: string }>; // ✅ async now
@@ -36,8 +30,8 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${school.name} | School in ${school.city}`,
-    description: `${school.name} is one of the top schools in ${school.city}, known for its commitment to quality education, discipline, and student growth. Learn more.`,
+    title: `${school.name} | Educational Institute in ${school.city}`,
+    description: `${school.name} is one of the top educational institute in ${school.city}, known for its commitment to quality education, discipline, and student growth. Learn more.`,
     keywords: [school.name, "school", school.city, "education"],
     openGraph: {
       title: `${school.name} | School in ${school.city}`,

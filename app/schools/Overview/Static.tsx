@@ -1,9 +1,11 @@
 import { Title } from "@/components/Title"
+import { useOrgContext } from "@/context/orgContext"
 
  export default function StaticOverview(){
+    const data=useOrgContext();
     return(
         <>
-         <Title>WHY CHOOSE AQSA?</Title>
+         <Title>WHY CHOOSE {data?.name?.toLocaleUpperCase()}?</Title>
             <ul className="text-gray-800 list-disc pl-5 gap-2 mt-10 flex flex-col">
                 <li> Top-rated Mission in Cooch Behar, known for academic excellence.</li>
                 <li> Modern classrooms equipped with smart learning tools.</li>

@@ -1,21 +1,15 @@
+import { School } from "@/types";
 import { createContext, ReactNode, useContext } from "react";
 
-type OrgContextType={
-    name:string,
-    location:string,
-    logo:string,
-    suit:string,
-    phone?:string,
-    websiteURL?:string
-}
-const OrgContext=createContext<null|OrgContextType>(null);
+
+const OrgContext=createContext<null|School>(null);
 
  export const OrgContextProvider=({
     children,
     data,
 }:{
     children:ReactNode,
-    data:OrgContextType,
+    data:School,
 })=>{
    return(
     <OrgContext.Provider value={data}>

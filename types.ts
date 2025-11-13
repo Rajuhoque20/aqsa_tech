@@ -6,4 +6,8 @@ export interface School {
   location?:string;
   phone?:string;
   websiteURL?:string,
+  email?:string,
+  facebook?:string,
+  logo:string,
+  suit?:string,
 }

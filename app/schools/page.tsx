@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { slugify } from "@/utility/slugify";
-import { School } from "@/types";
-
-const schools: School[] = [
-  { name: "Al Ansar Mission", city: "Cooch Behar", students: 1500 },
-  { name: "Al Karim Mission", city: "Cooch Behar", students: 25 },
-];
+import { schools } from "@/constant";
 
 export default function SchoolsPage() {
   return (

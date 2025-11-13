@@ -2,9 +2,9 @@
 import { School } from '@/types'
 import React from 'react'
 import { BannerHome } from "@/components/Home/Home";
-// import { NewsFeed } from "@/components/NewsFeed/NewsFeed";
-// import { OurTopper } from "@/components/OurTopper/OurTopper";
-// import { Gallery } from "@/components/Gallery/Gallery";
+ import { NewsFeed } from "@/components/NewsFeed/NewsFeed";
+import { OurTopper } from "@/components/OurTopper/OurTopper";
+import { Gallery } from "@/components/Gallery/Gallery";
 
 import { OrgContextProvider } from "@/context/orgContext";
 import { AboutUs } from '../AboutUs/AboutUs';
@@ -15,12 +15,12 @@ import Footer from '../Footer/Footer';
 
 const AllPages = ({school}:{school:School}) => {
   return (
-    <OrgContextProvider data={{...school, logo:'/aqsa_logo.jpg', suit:'An Institue of Eminance',location:school?.location||""}}>
+    <OrgContextProvider data={school}>
       <Header/>
       <BannerHome/>
-    {/* <NewsFeed/>
+    <NewsFeed/>
     <OurTopper/>
-    <Gallery/> */}
+    <Gallery/>
     <AboutUs/>
     <Overview/>
     <Contact/>
