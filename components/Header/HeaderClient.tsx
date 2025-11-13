@@ -26,6 +26,7 @@ import { useOrgContext } from '@/context/orgContext';
       }
     ]
 export default function HeaderClient(){
+  const data=useOrgContext();
   
     return(
         <div className='h-[8vh] flex flex-col w-full items-center bg-gray-900 justify-center px-5'>
@@ -43,11 +44,11 @@ export default function HeaderClient(){
         <div className='ml-auto md:gap-5 gap-2 flex flex-col md:flex-row md:items-center mr-3'> 
             <div className='flex items-center gap-3 text-yellow-400'>
               <FaPhone size={20}/>
-              <h3>+91 7047082113</h3>  
+              <h3>{data?.phone}</h3>  
             </div>
             <div className='flex items-center gap-3 text-orange-400'>
               <FaEnvelope size={20}/>
-            <h3>raju.hoque97@gmail.com</h3> 
+            <h3>{data?.email}</h3> 
             </div>        
             <div className='hidden md:block'>
               <AdmissionButtion/>
