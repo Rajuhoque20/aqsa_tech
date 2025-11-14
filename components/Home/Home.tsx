@@ -65,7 +65,7 @@ export const BannerHome=()=>{
                     <div className='w-full h-full home-banner-container z-4 relative md:p-10 p-5'>
                         <div className='flex items-center gap-5'>
                             <div className='w-14 h-14 relative rounded-full border-dashed border-white border-1'  >
-                                    <Image src={data?.logo||'school logo'} alt="aqsa_logo"  fill  className='rounded-full'/>
+                                    <Image src={data?.logo||'school logo'} alt="al ansar mission logo"  fill  className='rounded-full'/>
                             </div>
                             <div className='flex flex-col gap-2'>
                                 <h1 className='md:text-3xl text-2xl font-semibold'>{data?.name}</h1>
