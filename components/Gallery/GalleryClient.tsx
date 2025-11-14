@@ -13,7 +13,7 @@ const events=[
   },
   "title": "Independence Day Celebration I",
   "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/1660730652_c6b5e58a-0910-4659-8dbb-ecd7e8aaec8d-1-1.jpg",
+  "image": "https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_ind1.jpg",
   "date": "2025-08-15",
   "__v": 0
 },
@@ -23,7 +23,7 @@ const events=[
   },
   "title": "Independence Day Celebration II",
   "description": "Our students have performed different kinds of events on the occasion of this day",
-  "image": "/007.jpeg",
+  "image": "https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_ind2.jpg",
   "date": "2025-08-15",
   "__v": 0
 },
@@ -33,7 +33,7 @@ const events=[
   },
   "title": "Independence Day III",
   "description": "Our Student sang Indian National Anthem in of the National Flag.",
-  "image": "/ind_image3.jpg",
+  "image": "https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_ind3.jpg",
   "date": "2025-08-15",
   "__v": 0
 },
@@ -41,9 +41,9 @@ const events=[
   "_id": {
     "$oid": "68ada84800776a16124990cb"
   },
-  "title": "Teachers' Day Celebration I",
-  "description": "Our school joyfully celebrated Teacher’s Day to honor the dedication and guidance of our beloved teachers.",
-  "image": "/teather's_day1.jpg",
+  "title": "Republic Day Celebration I",
+  "description": "Our school celebrated Republic Day with great enthusiasm and respect for our nation",
+  "image": "https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_rep1.jpg",
   "date": "2025-09-05",
   "__v": 0
 },
@@ -51,9 +51,9 @@ const events=[
   "_id": {
     "$oid": "68adabe200776a16124990f2"
   },
-  "title": "Teachers' Day II",
-  "description": "Students expressed their gratitude through cultural performances, speeches, and heartfelt wishes.",
-  "image": "/teachers_day2.jpg",
+  "title": "Republic Day II",
+  "description": "Students performed patriotic songs, dances, and speeches highlighting the importance of the day.",
+  "image": "https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_rep2.jpg",
   "date": "2025-09-05",
   "__v": 0
 },
@@ -61,42 +61,13 @@ const events=[
   "_id": {
     "$oid": "68adac2100776a16124990f6"
   },
-  "title": "Teachers' Day Celebration III",
-  "description": "The celebration created a warm and memorable atmosphere, strengthening the bond between teachers and students.",
-  "image": "/teachers_day3.jpg",
+  "title": "Republic Day Celebration III",
+  "description": "The flag was hoisted with pride, reminding everyone of the values of freedom and unity.",
+  "image": "https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_rep4.jpg",
   "date": "2025-09-05",
   "__v": 0
 },
-{
-  "_id": {
-    "$oid": "68adbd2500776a1612499133"
-  },
-  "title": "Sports Day Celebration I",
-  "description": "Our school organized Sports Day with great enthusiasm, bringing together students, teachers, and parents.",
-  "image": "/sports1.jpg",
-  "date": "2025-02-26",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "68adbdaa00776a1612499137"
-  },
-  "title": "Sports Day Celebration II",
-  "description": "Various athletic events and team games were held, showcasing the talent, energy, and sportsmanship of the participants.",
-  "image": "/sports_2.jpg",
-  "date": "2013-01-26",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "68adbe4f00776a161249913b"
-  },
-  "title": "Sports Day Celebration III",
-  "description": "The day concluded with prize distribution, celebrating the spirit of healthy competition and teamwork.",
-  "image": "/sports3.jpg",
-  "date": "2025-08-26",
-  "__v": 0
-},
+
 
 ];
 

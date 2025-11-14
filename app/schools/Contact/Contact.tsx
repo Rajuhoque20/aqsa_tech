@@ -9,8 +9,7 @@ export const Contact=()=>{
             <Title>CONTACT</Title>
             <div className="flex md:gap-20 gap-10 flex-col md:flex-row">
             <ContactMap/>
-                <div className="md:w-1/3 w-full flex flex-col gap-3">
-                <h2 className="text-gray-600">Write us a message directly</h2>
+                <div className="md:w-1/3 w-full flex flex-col gap-3 justify-center">
                 <ContactForm/>
                 </div>
             </div>

@@ -1,7 +1,10 @@
+'use client'
 import Image from "next/image"
 import { Title } from "@/components/Title"
+import { useOrgContext } from "@/context/orgContext"
 
 export const AboutUs=()=>{
+    const data=useOrgContext();
     return(
         <div className="flex flex-col gap-5 px-5 md:px-30 md:my-30 my-20"  id="about">
              <Title>ABOUT US</Title>
@@ -17,7 +20,7 @@ export const AboutUs=()=>{
                      <Image
                      className="rounded-md"
                      style={{boxShadow:'0px 0px 20px rgba(0,0,0,0.5'}}
-                     src='/general_sec.jpg'
+                     src='https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_secretary.jpg'
                      alt='/general_sec.jpg'
                      fill={true}
                      objectFit="fill"
@@ -25,13 +28,13 @@ export const AboutUs=()=>{
                 </div>
                
             <span className="text-gray-700 w-full md:w-3/4">
-                1947 was a watershed year for India. It achieved its independence but simultaneously the western as well as its eastern side was partitioned. The Muslims were badly hit, particularly for those who remained in West Bengal. For several decades, the community remained moribund. From the mid eighties of the last century, situation began to change when Al-Aqsa Mission came into existence.
-                In the year 1986-87, Al-Aqsa Mission started its journey in a humble way with only seven students. The motto was to give modern education with moral values in a fully residential system where students from all strata of the society, irrespective of their financial condition would live, learn, and grow together.
+                {`1947 was a watershed year for India. It achieved its independence but simultaneously the western as well as its eastern side was partitioned. The Muslims were badly hit, particularly for those who remained in West Bengal. For several decades, the community remained moribund. From the mid eighties of the last century, situation began to change when ${data?.name} came into existence.
+                In the year 1986-87, ${data?.name} started its journey in a humble way with only seven students. The motto was to give modern education with moral values in a fully residential system where students from all strata of the society, irrespective of their financial condition would live, learn, and grow together.
                 The students, coming from the poorest section of the society, were given education free of cost. Donations & Zakat were collected to meet up the expenses and gradually the name of the Mission spread far and wide and numerous people came along and a movement which has been aptly called &apos;the Mission Movement&apos; started. Now, it has made its presence feel very strongly in the state of West Bengal.
                 It is heartening to note that Muslims of Bengal are embracing education to break free from a certain way of life and age-old stereotyping. With all humbleness we want to say that the Mission has played a pivotal role here.
                 We are presenting the activities of the Mission which will manifest its contribution in the building of our nation.
                 We know our limitations. Still we believe that we will achieve our lofty goal, slowly but definitely, as the Almighty is with us.
-                December 2018 Kolkata, India
+                December 2018 Kolkata, India`}
             </span>
             </div>
         </div>

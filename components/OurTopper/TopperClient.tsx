@@ -12,73 +12,73 @@ type TopperDTO={
 }
 const toppersData= [{
   "_id":'1',
-  "name": "Mithu Aktar",
-  "marks": "500",
+  "name": "Neha Parveen",
+  "marks": "462",
   "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/download.jpeg",
+  "image": "/ansar_topper1.jpg",
   "class": "XII",
   "__v": 0
 },
 {
   "_id": '2',
-  "name": "Babli Parveen",
-  "marks": "570",
+  "name": "Afsana Sarmin",
+  "marks": "461",
   "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/download (4).jpeg",
-  "class": "X",
+  "image": "/ansar_topper3.jpg",
+  "class": "XII",
   "__v": 0
 },
 {
   "_id": '3',
-  "name": "Masuma Parveen",
-  "marks": "680",
+  "name": "Rezowana Aktar",
+  "marks": "457",
   "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/download (2).jpeg",
-  "class": "X",
+  "image": "/ansar_topper2.jpg",
+  "class": "XII",
   "__v": 0
 },
 {
   "_id": '4',
-  "name": "Sweety Parveen",
+  "name": "Tamanna Najrin",
   "marks": "600",
   "description": "sdfghjkhgfdssdfg",
-  "image": "/images.jpeg",
-  "class": "X",
+  "image": "/ansar_topper4.jpg",
+  "class": "XII",
   "__v": 0
 },
 {
   "_id":'5',
-  "name": "Arifa Sonam",
+  "name": "Babli Sarkar",
   "marks": "450",
   "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/images (1).jpeg",
+  "image": "/ansar_topper5.jpg",
   "class": "XII",
   "__v": 0
 },
 {
   "_id":'6',
-  "name": "Muslima Khatun",
+  "name": "Afsana Islam",
   "marks": "440",
   "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/images (2).jpeg",
+  "image": "/ansar_topper6.jpg",
   "class": "XII",
   "__v": 0
 },
 {
   "_id": '7',
-  "name": "Jehana Khatun",
+  "name": "Olivia Siddika",
   "marks": "480",
   "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/images (3).jpeg",
+  "image": "/ansar_topper7.jpg",
   "class": "XII",
   "__v": 0
 },
 {
   "_id": '8',
-  "name": "Arif Aktar",
+  "name": "Hasina Banu",
   "marks": "690",
   "description": "Our Student sang Indian National Anthem in of the National Flag.",
-  "image": "/images (2).jpeg",
+  "image": "/ansar_topper8.jpg",
   "class": "X",
   "__v": 0
 }]
@@ -114,11 +114,11 @@ useEffect(() => {
          <Title>OUR TOPPERS</Title>
         <div className='grid md:gap-20 gap-8 grid-cols-1 md:grid-cols-4 mt-8'>
           {toppersData?.map((item:TopperDTO)=>(
-            <div className={`rounded-md flex flex-col items-center gap-3 transform transition hover:scale-105 topper-card-in`} key={item._id} >
-              <div className='relative h-[220px] w-[220PX] mx-10'>
+            <div className={`rounded-md topper-clip flex flex-col items-center gap-3 transform transition hover:scale-105 topper-card-in`} key={item._id} >
+              <div className='relative h-[120px] w-[120PX] mx-10'>
               <Image
                 style={{boxShadow:'0px 0px 30px skyblue'}}
-                className='rounded-full'
+                className='rounded-md'
               alt={item?.image}
               src={item?.image}
               fill={true}

@@ -7,7 +7,7 @@ import { useInView } from "@/components/customHooks/useInView";
 type CardId = "1" | "2" | "3";
 
 const limits = {
-  student: 1000,
+  student: 2500,
   teacher: 50,
   passing_ratio: 100,
 };

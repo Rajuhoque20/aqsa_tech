@@ -27,7 +27,8 @@ body {
   box-sizing: border-box;
 }
 .overview-bg{
- background-image: linear-gradient(rgb(192, 11, 216) 0, rgb(149, 152, 250) 100%);
+ /* background-image: linear-gradient(rgb(244, 218, 248) 0, rgb(249, 173, 236) 100%); */
+ background-color: #1a9d78;
 }
 
 .bottom-in,
@@ -62,6 +63,11 @@ body {
 .topper-card-normal{
   transform: scale(1);
   opacity: 1;
+}
+
+.topper-clip{
+  clip-path: circle(50%);
+  border-bottom: 2px solid rgb(95, 6, 79);
 }
 
 

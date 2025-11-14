@@ -9,15 +9,15 @@ import { useOrgContext } from "@/context/orgContext"
 
 const banners=[
     {
-          img:'/bg_banner_1.jpg',
+          img:'https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_banner1.jpg',
           alt:"banner1"
     },
     {
-        img:'/bg_banner_2.jpg',
+        img:'https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_banner2.jpg',
          alt:"banner2"
     },
     {
-          img:'/bg_banner_3.jpg',
+          img:'https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_banner3.jpg',
            alt:"banner3"
     }
 ];
@@ -83,7 +83,9 @@ export const BannerHome=()=>{
                                   style={{ textShadow: "2px 4px 8px rgba(0,0,0,0.8)" }}
                                 >{data?.location}</span>
                                 
-                                <Link style={{ textShadow: "2px 4px 8px rgba(0,0,0,0.8)" }} className="text-blue-500 underline decoration-dotted hover:scale-110 transition" href='https://www.google.com/maps/place/Cooch+Behar+Rajbari+Park/@26.3281508,89.4361229,17z/data=!3m1!4b1!4m6!3m5!1s0x39e2fe811fc784f1:0xd8ba085180bfd037!8m2!3d26.328146!4d89.4386978!16s%2Fg%2F11fx8gllz6?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D'>View Map</Link>
+                                <Link style={{ textShadow: "2px 4px 8px rgba(0,0,0,0.8)" }} className="text-blue-500 underline decoration-dotted hover:scale-110 transition"
+                                 href='https://www.google.com/maps/place/Al+Ansar+Mission/@26.2595147,89.454095,17z/data=!3m1!4b1!4m6!3m5!1s0x39e2fc93680a19df:0x6298a069fcd51a9e!8m2!3d26.2595099!4d89.4566699!16s%2Fg%2F11c5hzdlwh?entry=ttu&g_ep=EgoyMDI1MTExMS4wIKXMDSoASAFQAw%3D%3D'
+                                 >View Map</Link>
                             </div>
 
                         </div>
