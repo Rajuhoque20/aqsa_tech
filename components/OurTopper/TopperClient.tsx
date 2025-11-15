@@ -67,7 +67,7 @@ const toppersData= [{
 {
   "_id": '7',
   "name": "Olivia Siddika",
-  "marks": "480",
+  "marks": "453",
   "description": "This year we celebrated the Independence enthusiastically.",
   "image": "/ansar_topper7.jpg",
   "class": "XII",
