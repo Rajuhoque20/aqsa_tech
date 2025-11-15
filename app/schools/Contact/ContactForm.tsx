@@ -25,7 +25,7 @@ export default function ContactForm(){
         },
         {
             title:'Facebook',
-            value:data?.phone,
+            value:data?.facebook,
             icon:<FaFacebook  size={20}/>,
             link:'',
         },

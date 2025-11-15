@@ -10,6 +10,7 @@ export interface School {
   facebook?:string,
   logo:string,
   suit?:string,
+  mapLink?:string,
 }
 
 export type TopperDTO={

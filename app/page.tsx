@@ -3,16 +3,17 @@ import Footer from "@/components/Footer/Footer";
 import GetInTouch from "@/components/GetInTouch/GetInTouch";
 import { Overview } from "@/components/Overview/Overview";
 import TechHome from "@/components/TechHome/TechHome";
-
+import TopSubscriber from "@/components/TopSubscriber/TopSubscriber";
 
 export default function Home() {
   return (
     <>
-    <TechHome/>
+      <TechHome/>
       <AboutUs/>
-       <Overview/>
-     <GetInTouch/>
-     <Footer/>
+      <Overview/>
+      <TopSubscriber/>
+      <GetInTouch/>
+      <Footer/>
     </>
   );
 }
