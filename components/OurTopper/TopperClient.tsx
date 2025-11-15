@@ -40,7 +40,7 @@ const toppersData= [{
 {
   "_id": '4',
   "name": "Tamanna Najrin",
-  "marks": "600",
+  "marks": "456",
   "description": "sdfghjkhgfdssdfg",
   "image": "/ansar_topper4.jpg",
   "class": "XII",
@@ -76,10 +76,10 @@ const toppersData= [{
 {
   "_id": '8',
   "name": "Hasina Banu",
-  "marks": "690",
+  "marks": "452",
   "description": "Our Student sang Indian National Anthem in of the National Flag.",
   "image": "/ansar_topper8.jpg",
-  "class": "X",
+  "class": "XII",
   "__v": 0
 }]
       

@@ -33,11 +33,22 @@ export async function generateMetadata(
     title: `${school.name} | Educational Institute in ${school.city}`,
     description: `${school.name} is one of the top educational institute in ${school.city}, known for its commitment to quality education, discipline, and student growth. Learn more.`,
     keywords: [school.name, "school", school.city, "education"],
+    icons: {
+      icon: "/ansar_fav.ico",
+    },
     openGraph: {
       title: `${school.name} | School in ${school.city}`,
       description: `${school.name} is one of the top schools in ${school.city}.`,
       url: `https://aqsatech.in/schools/${slug}`,
       type: "article",
+      images: [
+    {
+      url: "/ansar_opengraph.png",   // must be absolute path or CDN
+      width: 1200,
+      height: 630,
+      alt: `${school.name} banner`,
+    },
+  ],
     },
     alternates: {
       canonical: `https://aqsatech.in/schools/${slug}`,

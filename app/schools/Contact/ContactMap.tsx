@@ -1,8 +1,6 @@
 
-import { useOrgContext } from "@/context/orgContext";
-import { FaPhone, FaEnvelope, } from "react-icons/fa";
  export default function ContactMap(){
-    const data=useOrgContext();
+   
     return(
          <div className="relative md:w-3/4 w-full transition hover:scale-105 "> 
                                  
