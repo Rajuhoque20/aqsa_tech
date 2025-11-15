@@ -29,7 +29,7 @@ const news=[{
   "_id": {
     "$oid": "68b99f0e8c5db1f4f0e77f3a"
   },
-  "title": "Addmission for class V to IX and XI will start from 1st January, 2025",
+  "title": "Admission for class IV to IX will start from 1st January, 2025",
   "file": "/uploads/undefined",
   "date": "2025-09-04",
   "__v": 0

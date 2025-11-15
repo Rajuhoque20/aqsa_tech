@@ -43,7 +43,7 @@ export async function generateMetadata(
       type: "article",
       images: [
     {
-      url: "/ansar_opengraph.png",   // must be absolute path or CDN
+      url: school?.logo,   // must be absolute path or CDN
       width: 1200,
       height: 630,
       alt: `${school.name} banner`,

@@ -6,23 +6,31 @@ import  './Home.css'
 import { TabCard } from "./TabCard"
 import { FaNewspaper, FaStar, FaUserGraduate, FaMapMarkerAlt  } from "react-icons/fa";
 import { useOrgContext } from "@/context/orgContext"
+import { BannerDTO } from "@/types"
+import { banners } from "@/data/banner"
 
-const banners=[
-    {
-          img:'https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_banner1.jpg',
-          alt:"banner1"
-    },
-    {
-        img:'https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_banner2.jpg',
-         alt:"banner2"
-    },
-    {
-          img:'https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_banner3.jpg',
-           alt:"banner3"
-    }
-];
+// const banners=[
+//     {
+//           img:'https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_banner1.jpg',
+//           alt:"banner1"
+//     },
+//     {
+//         img:'https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_banner2.jpg',
+//          alt:"banner2"
+//     },
+//     {
+//           img:'https://raw.githubusercontent.com/Rajuhoque20/aqsa_tech_images/refs/heads/main/ansar_banner3.jpg',
+//            alt:"banner3"
+//     }
+// ];
 
-const tabs=[
+
+
+ 
+
+export const BannerHome=()=>{
+    const data=useOrgContext();
+    const tabs=[
     {
         title:"News",
         id:'news',
@@ -36,22 +44,18 @@ const tabs=[
         icon:<FaUserGraduate size={40}/>
     },
      {
-        title:"Why Aqsa",
+        title:'Why ' +data?.name+'?',
         id:'why_aqsa',
         bg:'bg-gray-800',
         icon:<FaStar size={40}/>
     },
 ];
-
- 
-
-export const BannerHome=()=>{
-    const data=useOrgContext();
+    const bannerInfo: BannerDTO[] =data?.name? banners[data?.name] ?? []:[];
     return(
         <div className="flex flex-col md:h-[92vh] h-[400px] w-screen relative text-white" id="home">
                <Carousel
-               dataLength={banners?.length}
-               RenderedItem={banners?.map((item)=>{
+               dataLength={bannerInfo?.length}
+               RenderedItem={bannerInfo?.map((item)=>{
                     return(
                         <div className='relative min-w-full h-full flex-shrink-0' key={item.img}>            
                                 <Image src={item.img} fill alt={item.alt} 

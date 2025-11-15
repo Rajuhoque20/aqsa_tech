@@ -2,88 +2,14 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image';
 import { Title } from '../Title';
-
-type TopperDTO={
-  image:string,
-  marks:string,
-  _id:string,
-  name:string,
-  class:string,
-}
-const toppersData= [{
-  "_id":'1',
-  "name": "Neha Parveen",
-  "marks": "462",
-  "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/ansar_topper1.jpg",
-  "class": "XII",
-  "__v": 0
-},
-{
-  "_id": '2',
-  "name": "Afsana Sarmin",
-  "marks": "461",
-  "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/ansar_topper3.jpg",
-  "class": "XII",
-  "__v": 0
-},
-{
-  "_id": '3',
-  "name": "Rezowana Aktar",
-  "marks": "457",
-  "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/ansar_topper2.jpg",
-  "class": "XII",
-  "__v": 0
-},
-{
-  "_id": '4',
-  "name": "Tamanna Najrin",
-  "marks": "456",
-  "description": "sdfghjkhgfdssdfg",
-  "image": "/ansar_topper4.jpg",
-  "class": "XII",
-  "__v": 0
-},
-{
-  "_id":'5',
-  "name": "Babli Sarkar",
-  "marks": "450",
-  "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/ansar_topper5.jpg",
-  "class": "XII",
-  "__v": 0
-},
-{
-  "_id":'6',
-  "name": "Afsana Islam",
-  "marks": "440",
-  "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/ansar_topper6.jpg",
-  "class": "XII",
-  "__v": 0
-},
-{
-  "_id": '7',
-  "name": "Olivia Siddika",
-  "marks": "453",
-  "description": "This year we celebrated the Independence enthusiastically.",
-  "image": "/ansar_topper7.jpg",
-  "class": "XII",
-  "__v": 0
-},
-{
-  "_id": '8',
-  "name": "Hasina Banu",
-  "marks": "452",
-  "description": "Our Student sang Indian National Anthem in of the National Flag.",
-  "image": "/ansar_topper8.jpg",
-  "class": "XII",
-  "__v": 0
-}]
-      
+import { toppers } from '@/data/toppers';
+import { useOrgContext } from '@/context/orgContext';
+import { TopperDTO } from '@/types';
+    
 export const ToppersClient = () => {
+  const data=useOrgContext();
+  const toppersData: TopperDTO[] = data?.name ? toppers[data.name] ?? [] : [];
+   
 
 useEffect(() => {
   const observer = new IntersectionObserver(
@@ -110,7 +36,7 @@ useEffect(() => {
 }, []);
 
   return (
-   <div className='h-max text-black p-5 md:p-30 gap-5 flex flex-col mt-10 md:mt-0' id="toppers">
+   <div className='h-max text-black p-5 md:p-30 md:pb-0 gap-5 flex flex-col mt-10 md:mt-0' id="toppers">
          <Title>OUR TOPPERS</Title>
         <div className='grid md:gap-20 gap-8 grid-cols-1 md:grid-cols-4 mt-8'>
           {toppersData?.map((item:TopperDTO)=>(
