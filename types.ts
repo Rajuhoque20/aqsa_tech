@@ -11,6 +11,7 @@ export interface School {
   logo:string,
   suit?:string,
   mapLink?:string,
+  locationLink?:string,
 }
 
 export type TopperDTO={

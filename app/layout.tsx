@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Roboto_Condensed } from "next/font/google";
 const robotoCondensed = Roboto_Condensed({
@@ -9,49 +8,50 @@ const robotoCondensed = Roboto_Condensed({
   display: "swap",
 });
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-
-
-
 export const metadata: Metadata = {
-   title: "Aqsa Tech",
-  description: "Aqsa Tech provides dynamic and interactive websites for Education, Health Care, Finanace, Food Order and so on.",
+  metadataBase: new URL("https://aqsatech.in"),
 
-  keywords: ["Aqsa Tech", "Al Karim Mission","Al Karim Mission Cooch behar","Delhi Public School"],
+  title: "Aqsa Tech",
+  description:
+    `Aqsa Tech provides dynamic and interactive websites tailored for industries such as Education, Health Care, Finance, and Food Services.
+We focus on building user-friendly and performance-optimized platforms that enhance engagement and streamline operations.
+Our solutions are crafted with modern technologies to ensure reliability, speed, and long-term scalability.
+From simple portals to advanced custom systems, Aqsa Tech delivers digital experiences that truly make an impact.`,
+
+  keywords: [
+    "Aqsa Tech",
+    "Official Website of Aqsa Tech",
+    "Website Provider in Cooch Behar"
+  ],
+
   icons: {
-    icon: '/favicon.ico',
+    icon: "/aqsa_tech_logo.png",
   },
+
   openGraph: {
     title: "Aqsa Tech | Website Provider",
     description: "Official website of Aqsa Tech",
     url: "https://aqsatech.in/",
-    siteName: "Raju Hoque Portfolio",
+    siteName: "Aqsa Tech, Website Provider",
     images: [
       {
-        url: "https://aqsatech.in/profile_image.jpg",
+        url: "/aqsa_tech_logo.png", // this now auto resolves to https://aqsatech.in/profile_image.jpg
         width: 1200,
         height: 630,
-        alt: "Raju Hoque Portfolio Preview",
+        alt: "Aqsa Tech logo",
       },
     ],
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Aqsa Tech",
     description: "Official website of Aqsa Tech.",
-    images: ["https://aqsatech.in/profile_image.jpg"],
+    images: ["/aqsa_tech_logo.png"], // auto resolves to absolute URL
   },
 };
+
 
 export default function RootLayout({
   children,

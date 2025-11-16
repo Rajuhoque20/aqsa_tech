@@ -4,10 +4,15 @@ import { Title } from "../Title"
 export const AboutUs=()=>{
     return(
         <div className="flex flex-col gap-5 px-5 md:px-30 md:my-30 my-20"  id="about">
-             <Title>FOUNDER&apos;S DESK</Title>
+             <Title>ABOUT US</Title>
+             <p>Aqsa Tech provides dynamic and interactive websites tailored for industries such as Education, Health Care, Finance, and Food Services.
+We focus on building user-friendly and performance-optimized platforms that enhance engagement and streamline operations.
+Our solutions are crafted with modern technologies to ensure reliability, speed, and long-term scalability.
+From simple portals to advanced custom systems, Aqsa Tech delivers digital experiences that truly make an impact.</p>
            
 {/* 
             <h2 className="text-black text-2xl font-semibold mt-8 mb-3">Founder&apos;s Desk</h2> */}
+            <h2 className="text-2xl font-semibold mt-5">Founder&apos;s Desk</h2>
             <div className="flex gap-10 flex-col md:flex-row">
                 <div className="relative md:w-1/4 h-[30rem] md:h-[20rem]  transform transition hover:scale-105">
                      <Image
@@ -21,7 +26,7 @@ export const AboutUs=()=>{
                 </div>
                
             <p className="text-gray-700 w-full md:w-3/4">
-               Founded in 2020, Aqsa Tech stands as the first and only tech company based in Cooch Behar. We are driven by the vision of bringing modern digital solutions to businesses and institutions across multiple sectors. At Aqsa Tech, we specialize in building dynamic, interactive, and user-friendly websites that empower organizations to grow online. Our expertise spans across Education, Finance, Healthcare, Food Ordering, and many other industries.
+               Founded in 2025, Aqsa Tech stands as the first and only tech company based in Cooch Behar. We are driven by the vision of bringing modern digital solutions to businesses and institutions across multiple sectors. At Aqsa Tech, we specialize in building dynamic, interactive, and user-friendly websites that empower organizations to grow online. Our expertise spans across Education, Finance, Healthcare, Food Ordering, and many other industries.
 
 We combine creativity with technology to deliver custom web solutions that are not only visually appealing but also performance-driven. Our mission is to make Cooch Behar a rising name on the digital innovation map of India — starting with every client we serve. Whether you’re a startup, a school, or an established business, Aqsa Tech ensures your online presence reflects your brand’s full potential.
 

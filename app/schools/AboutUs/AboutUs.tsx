@@ -11,6 +11,12 @@ export const AboutUs=()=>{
     return(
         <div className="flex flex-col gap-5 px-5 md:px-30 md:my-30 my-20"  id="about">
              <Title>ABOUT US</Title>
+                <p>
+                    {data?.name} is one of the top educational institutes in {data?.city}, known for its commitment to quality education, discipline, and student growth.
+                    The institution focuses on holistic development, ensuring students excel academically and morally.
+                    With dedicated teachers and a supportive environment, it continues to shape bright futures.
+                    Its strong values and student-centric approach make it a trusted name in the region.
+             </p>
             <h2 className="text-black text-2xl font-semibold mt-5">Mission & Vission</h2>
             <span className="text-gray-700">             
                 {aboutInfo?.mission}

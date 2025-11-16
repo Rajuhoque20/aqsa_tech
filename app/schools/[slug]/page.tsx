@@ -30,30 +30,45 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${school.name} | Educational Institute in ${school.city}`,
-    description: `${school.name} is one of the top educational institute in ${school.city}, known for its commitment to quality education, discipline, and student growth. Learn more.`,
-    keywords: [school.name, "school", school.city, "education"],
-    icons: {
-      icon: "/ansar_fav.ico",
-    },
-    openGraph: {
-      title: `${school.name} | School in ${school.city}`,
-      description: `${school.name} is one of the top schools in ${school.city}.`,
-      url: `https://aqsatech.in/schools/${slug}`,
-      type: "article",
-      images: [
-    {
-      url: school?.logo,   // must be absolute path or CDN
-      width: 1200,
-      height: 630,
-      alt: `${school.name} banner`,
-    },
-  ],
-    },
-    alternates: {
-      canonical: `https://aqsatech.in/schools/${slug}`,
-    },
-  };
+  title: `${school.name} | Educational Institute in ${school.city}`,
+  description: `${school?.name} is one of the top educational institutes in ${school?.city}, known for its commitment to quality education, discipline, and student growth. 
+  The institution focuses on holistic development, ensuring students excel academically and morally. 
+  With dedicated teachers and a supportive environment, it continues to shape bright futures. 
+  Its strong values and student-centric approach make it a trusted name in the region.`,
+
+  keywords: [school.name, "school", school.city, "education"],
+
+  icons: {
+    icon: "/ansar_fav.ico",
+  },
+
+  openGraph: {
+    title: `${school.name} | School in ${school.city}`,
+    description: `${school.name} is one of the top schools in ${school.city}.`,
+    url: `https://aqsatech.in/schools/${slug}`,
+    type: "article",
+    images: [
+      {
+        url: school?.logo, // now allowed (absolute required if no metadataBase)
+        width: 1200,
+        height: 630,
+        alt: `${school.name} banner`,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: `${school.name} | School in ${school.city}`,
+    description: `${school.name} is one of the top schools in ${school.city}.`,
+    images: [school?.logo],
+  },
+
+  alternates: {
+    canonical: `https://aqsatech.in/schools/${slug}`,
+  },
+}
+
 }
 
 export default async function SchoolPage({ params }: SchoolPageProps) {

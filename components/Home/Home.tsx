@@ -88,7 +88,7 @@ export const BannerHome=()=>{
                                 >{data?.location}</span>
                                 
                                 <Link style={{ textShadow: "2px 4px 8px rgba(0,0,0,0.8)" }} className="text-blue-500 underline decoration-dotted hover:scale-110 transition"
-                                 href='https://www.google.com/maps/place/Al+Ansar+Mission/@26.2595147,89.454095,17z/data=!3m1!4b1!4m6!3m5!1s0x39e2fc93680a19df:0x6298a069fcd51a9e!8m2!3d26.2595099!4d89.4566699!16s%2Fg%2F11c5hzdlwh?entry=ttu&g_ep=EgoyMDI1MTExMS4wIKXMDSoASAFQAw%3D%3D'
+                                 href={data?.locationLink||''}
                                  >View Map</Link>
                             </div>
 

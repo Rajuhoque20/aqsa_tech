@@ -4,12 +4,13 @@ import { useOrgContext } from "@/context/orgContext"
     const data=useOrgContext(); 
     return(
          <div className="relative md:w-3/4 w-full transition hover:scale-105 ">                                 
-               <iframe 
-                width="100%" 
-                height="500" 
-                loading="lazy"
-                src={data?.mapLink}>
-                </iframe>     
+              <iframe
+            src={data?.mapLink}
+            className="w-full h-[500px] rounded-xl shadow-md"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            />
         </div>
     )
 }
